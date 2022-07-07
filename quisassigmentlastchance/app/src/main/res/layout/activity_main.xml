@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textColor="#FA0707"
+        android:textStyle="bold"></TextView>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="321dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/benzema"></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/TextQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Who is This Player ? "
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            style="Bold"
+            android:textSize="18sp"
+            > </TextView>
+        <Button
+            android:id="@+id/opt1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:text="الحكومة"
+            ></Button>
+        <Button
+            android:layout_marginTop="20dp"
+            android:text="Benzema"
+            android:id="@+id/opt2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            ></Button>
+        <Button
+            android:layout_marginTop="20dp"
+
+            android:text="ALL of The above"
+            android:id="@+id/opt3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            ></Button>
+        <LinearLayout  android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/Score"
+                android:layout_marginStart="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                ></Button>
+            <Button
+                android:id="@+id/reset"
+                android:layout_marginStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                ></Button></LinearLayout>
+    </LinearLayout>
+</LinearLayout>
